@@ -1,71 +1,24 @@
-    <!--==========================
-      Testimonials Section
-    ============================-->
-    <section id="testimonials" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Any Description which you want to show (Optional)</p>
-        </div>
-        <div class="owl-carousel testimonials-carousel">
-
-            <div class="testimonial-item">
-              <p>
-                <img src="../../assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Any Description which you want to show Any Description which you want to showAny Description which you want to show Any Description which you want to show Any Description which you want to show Any Description which you want to show.
-                <img src="../../assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="../../assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
-              <h3>ABC</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="../../assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Any Description which you want to show Any Description which you want to showAny Description which you want to show Any Description which you want to show Any Description which you want to show Any Description which you want to show.
-                <img src="../../assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="../../assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
-              <h3>ABC</h3>
-              <h4>Designer</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="../../assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Any Description which you want to show Any Description which you want to showAny Description which you want to show Any Description which you want to show Any Description which you want to show Any Description which you want to show.
-                <img src="../../assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="../../assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
-              <h3>ABC</h3>
-              <h4>Store Owner</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="../../assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Any Description which you want to show Any Description which you want to showAny Description which you want to show Any Description which you want to show Any Description which you want to show Any Description which you want to show.
-                <img src="../../assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="../../assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
-              <h3>ABC</h3>
-              <h4>Freelancer</h4>
-            </div>
-
-            <div class="testimonial-item">
-              <p>
-                <img src="../../assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                Any Description which you want to show Any Description which you want to showAny Description which you want to show Any Description which you want to show Any Description which you want to show Any Description which you want to show.
-                <img src="../../assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-              </p>
-              <img src="../../assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
-              <h3>ABC</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-
-        </div>
-
+<!--==========================
+  Testimonials Section
+============================-->
+<section id="testimonials" class="wow fadeInUp">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{ testimonials }}</h2>
+      <p>{{ testimonialsDesription}}</p>
+    </div>
+    <div class="owl-carousel testimonials-carousel">
+      <div class="testimonial-item" *ngFor="let testimonialItems of testimonialsMembers">
+        <p>
+          <img src="{{ quoteLeft}}" class="quote-sign-left" alt="">
+          {{testimonialItems.speaks}}
+          <img src="{{ quoteRight}}" class="quote-sign-right" alt="">
+        </p>
+        <img src="{{testimonialItems.image}}" class="testimonial-img" alt="">
+        <h3>{{testimonialItems.name}}</h3>
+        <h4>{{testimonialItems.position}}</h4>
       </div>
-    </section><!-- #testimonials -->
+    </div>
+  </div>
+</section><!-- #testimonials -->
 

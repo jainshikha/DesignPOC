@@ -5,7 +5,7 @@
       <div class="container">
         <div class="section-header">
           <h2>Contact Us</h2>
-          <p>Any Description which you want to show</p>
+          <p>{{ contactUsDesription }}</p>
         </div>
 
         <div class="row contact-info">
@@ -14,7 +14,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Address</h3>
-              <address>Hyderabad, NY 535022, India</address>
+              <address>{{ address }}</address>
             </div>
           </div>
 
@@ -22,7 +22,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+91 9542014439</a></p>
+              <p><a href="tel:{{ contactNumber }}">{{ contactNumber }}</a></p>
             </div>
           </div>
 
@@ -30,14 +30,14 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@designplustechnology.com">info@designplustechnology.com</a></p>
+              <p><a href="mailto:{{ contactMail }}">{{ contactMail }}</a></p>
             </div>
           </div>
 
         </div>
       </div>
 
-      <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+      <div id="google-map"  data-latitude="40.713732" data-longitude="-74.0092704"></div>
 
       <div class="container">
         <div class="form">

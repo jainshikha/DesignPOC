@@ -13,9 +13,7 @@
             <h3>Short Description</h3>
 
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Est in 2018 has the main vision To Provide Quality STRATEGIC STAFFING/PROJECT SERVICES to Clinets in CAD/CAM/PDM/PLM Technologies.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Creating INDUSTYR READY TALENT POOL (Work Ready Force) through COMPETENCY DEVELOPMENT PROGRAMS.</li>
-              <li><i class="ion-android-checkmark-circle"></i>  bridge competence gaps between the academic environment and the industry requirements.</li>
+              <li *ngFor="let description of shortDescription"><i class="ion-android-checkmark-circle"></i> {{ description }}</li>
             </ul>
 
           </div>
