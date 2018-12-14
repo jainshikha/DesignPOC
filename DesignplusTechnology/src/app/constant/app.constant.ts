@@ -93,4 +93,44 @@ export const testimonialsMembers = [
 ];
 export const quoteLeft = '../../assets/img/quote-sign-left.png';
 export const quoteRight = '../../assets/img/quote-sign-right.png';
-export const Portfolio = '../../assets/img/quote-sign-right.png';
+export const portfolioDescription = 'Any Project Description which you want to show to the end customers';
+export const portfolio = 'Our Portfolio';
+export const portfolioItems = [
+  {
+    portfolioImage: '../../assets/img/portfolio/1.jpg',
+    portfolioItem: 'Portfolio 1'
+  },
+  {
+    portfolioImage: '../../assets/img/portfolio/2.jpg',
+    portfolioItem: 'Portfolio 2'
+  },
+  {
+    portfolioImage: '../../assets/img/portfolio/3.jpg',
+    portfolioItem: 'Portfolio 3'
+  },
+  {
+    portfolioImage: '../../assets/img/portfolio/4.jpg',
+    portfolioItem: 'Portfolio 4'
+  },
+  {
+    portfolioImage: '../../assets/img/portfolio/5.jpg',
+    portfolioItem: 'Portfolio Item 5'
+  },
+  {
+    portfolioImage: '../../assets/img/portfolio/6.jpg',
+    portfolioItem: 'Portfolio Item 6'
+  },
+  {
+    portfolioImage: '../../assets/img/portfolio/7.jpg',
+    portfolioItem: 'Portfolio Item 7'
+  },
+  {
+    portfolioImage: '../../assets/img/portfolio/8.jpg',
+    portfolioItem: 'Portfolio Item 8'
+  }
+];
+export const client = 'Client';
+export const clientsDescription = `Designplus has been chosen as ‘The Best Support Partner’ by one one of our Pune based European clients. As company’s industry ready design engineers provided them highly flexible solution for mission critical requirements that had to meet strict time constraints.`;
+export const allClients = ['../../assets/img/clients/client-1.png', '../../assets/img/clients/client-2.png', '../../assets/img/clients/client-3.png', '../../assets/img/clients/client-4.png', '../../assets/img/clients/client-5.png', '../../assets/img/clients/client-6.png', '../../assets/img/clients/client-7.png', '../../assets/img/clients/client-5.png'];
+export const companyName = 'Designplus Technology';
+export const companyDescription = 'Short Description';
